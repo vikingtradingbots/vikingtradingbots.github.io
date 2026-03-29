@@ -57,6 +57,11 @@ const StartFreeModal = ({ onClose }: StartFreeModalProps) => {
     setLoading(true);
 
     try {
+      if (!supabase) {
+        setError('Backend not configured. Please try again later.');
+        setLoading(false);
+        return;
+      }
       const { error: dbError } = await supabase.from('clients').insert({
         name: form.name.trim(),
         email: form.email.trim().toLowerCase(),
