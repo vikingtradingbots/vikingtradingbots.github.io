@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { VikingManagementPreview } from './VikingManagementCards';
 
 interface HeroProps {
   onStartFree?: () => void;
