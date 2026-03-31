@@ -69,6 +69,7 @@ const RobotReportModal = ({ robotName, onClose }: { robotName: string; onClose: 
   const [selectedReport, setSelectedReport] = useState(0);
   const [reports, setReports] = useState<ReportData[]>(() => loadRobotData(robotName));
   const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
+  const [showManagement, setShowManagement] = useState(false);
 
   const currentReport = reports[selectedReport];
 
