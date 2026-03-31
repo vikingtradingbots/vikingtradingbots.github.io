@@ -25,7 +25,7 @@ const PricingSection = () => {
           </div>
         </div>
         <div className="flex flex-wrap justify-center gap-8 items-stretch">
-          <div className="flex-1 min-w-[200px] max-w-[240px] rounded-2xl overflow-hidden hover:-translate-y-2 transition-transform duration-200 cursor-pointer">
+          <div className="flex-1 min-w-[240px] max-w-[280px] rounded-2xl overflow-hidden hover:-translate-y-2 transition-transform duration-200 cursor-pointer flex flex-col">
             <div className="bg-[#1a5fa8] px-5 py-4 text-center">
               <p className="font-montserrat font-bold text-white text-base">Semi-Annual</p>
             </div>
