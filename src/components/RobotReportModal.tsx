@@ -243,6 +243,7 @@ const RobotReportModal = ({ robotName, onClose }: { robotName: string; onClose: 
         )}
 
         {/* Dashboard */}
+        {(activeTab === 'view' || (activeTab === 'manage' && authenticated)) && (
         <div className="p-4">
           <div className="border border-foreground/10 rounded-lg p-4 mb-4">
             {/* Row 1 */}
