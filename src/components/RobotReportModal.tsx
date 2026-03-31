@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { X, Upload, Lock, FileText, BarChart3, TrendingUp, Printer, Maximize2 } from 'lucide-react';
+import { X, Upload, Lock, FileText, BarChart3, TrendingUp, Printer, Maximize2, Shield } from 'lucide-react';
+import { VikingManagementPanel } from './VikingManagementCards';
 import vikingAlphaBtcusd from '@/assets/viking-alpha-btcusd.png';
 import vikingAlphaDax from '@/assets/viking-alpha-dax.png';
 
