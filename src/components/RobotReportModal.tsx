@@ -138,30 +138,30 @@ const RobotReportModal = ({ robotName, onClose }: { robotName: string; onClose: 
               <button
                 onClick={handleView}
                 className={`px-4 py-1.5 text-xs font-montserrat font-bold transition-colors ${
-                  mode === 'view' && !showManagement ? 'text-black' : 'text-white hover:brightness-125'
+                  activeTab === 'view' ? 'text-black' : 'text-white hover:brightness-125'
                 }`}
-                style={{ backgroundColor: mode === 'view' && !showManagement ? '#aaff00' : '#1a5fa8' }}
+                style={{ backgroundColor: activeTab === 'view' ? '#aaff00' : '#1a5fa8' }}
               >
                 View
               </button>
               <button
-                onClick={handleManage}
-                className={`px-4 py-1.5 text-xs font-montserrat font-bold transition-colors ${
-                  mode === 'manage' && !showManagement ? 'text-black' : 'text-white hover:brightness-125'
-                }`}
-                style={{ backgroundColor: mode === 'manage' && !showManagement ? '#aaff00' : '#1a5fa8' }}
-              >
-                Manage
-              </button>
-              <button
-                onClick={() => setShowManagement(!showManagement)}
+                onClick={() => setActiveTab('management')}
                 className={`px-4 py-1.5 text-xs font-montserrat font-bold transition-colors flex items-center gap-1 ${
-                  showManagement ? 'text-black' : 'text-white hover:brightness-125'
+                  activeTab === 'management' ? 'text-black' : 'text-white hover:brightness-125'
                 }`}
-                style={{ backgroundColor: showManagement ? '#aaff00' : '#1a5fa8' }}
+                style={{ backgroundColor: activeTab === 'management' ? '#aaff00' : '#1a5fa8' }}
               >
                 <Shield size={12} />
                 Management
+              </button>
+              <button
+                onClick={handleManage}
+                className={`px-4 py-1.5 text-xs font-montserrat font-bold transition-colors ${
+                  activeTab === 'manage' ? 'text-black' : 'text-white hover:brightness-125'
+                }`}
+                style={{ backgroundColor: activeTab === 'manage' ? '#aaff00' : '#1a5fa8' }}
+              >
+                Manage
               </button>
             </div>
             <button onClick={onClose} className="bg-foreground/10 hover:bg-foreground/20 rounded-full p-1.5 transition-colors ml-2">
