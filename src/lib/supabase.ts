@@ -1,1 +1,1 @@
-export const supabase = null
+export { supabase } from '@/integrations/supabase/client';

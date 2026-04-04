@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { X, Users, UserPlus, UserCheck, AlertTriangle, Search, MessageCircle, Plus, Trash2 } from 'lucide-react';
-import { supabase } from '@/integrations/supabase/client';
+import { supabase } from '@/lib/supabase';
 
 type ClientStatus = 'lead' | 'trial' | 'active' | 'inactive' | 'expired';
 
