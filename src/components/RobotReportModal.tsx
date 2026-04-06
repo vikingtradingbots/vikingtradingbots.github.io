@@ -111,7 +111,7 @@ const RobotReportModal = ({ robotName, onClose }: { robotName: string; onClose: 
       prints[index] = { ...prints[index], url: e.target?.result as string };
       updated[selectedReport] = { ...updated[selectedReport], prints };
       setReports(updated);
-      saveRobotData(robotName, updated);
+      saveRobotData(robotName, selectedYear, updated);
     };
     reader.readAsDataURL(file);
   };
