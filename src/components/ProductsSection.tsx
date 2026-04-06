@@ -117,6 +117,7 @@ const ProductsSection = () => {
           <span className="inline-block bg-primary/10 text-primary font-montserrat text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">
             Products
           </span>
+          <span id="strategy" className="block -mt-20 pt-20" aria-hidden="true"></span>
           <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-foreground tracking-[-0.02em] mb-4">
             Intelligent Automation with Professional Trade Management
           </h2>
@@ -125,7 +126,15 @@ const ProductsSection = () => {
           </p>
         </div>
 
-        {/* Tool cards */}
+        {/* Strategy cards */}
+        <div className="text-center mb-10 mt-8">
+          <span className="inline-block bg-primary/10 text-primary font-montserrat text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">
+            Strategy
+          </span>
+          <h2 className="font-montserrat text-2xl md:text-3xl font-bold text-foreground tracking-[-0.02em]">
+            Built-in Trade Management Tools
+          </h2>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
           {tools.map((tool) => (
             <div
