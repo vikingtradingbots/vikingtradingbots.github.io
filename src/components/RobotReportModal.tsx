@@ -447,7 +447,7 @@ const RobotReportModal = ({ robotName, onClose }: { robotName: string; onClose: 
           {isEditable && (
             <button
               onClick={() => {
-                saveRobotData(robotName, reports);
+                saveRobotData(robotName, selectedYear, reports);
                 setActiveTab('view');
                 setAuthenticated(false);
                 setPasswordInput('');
