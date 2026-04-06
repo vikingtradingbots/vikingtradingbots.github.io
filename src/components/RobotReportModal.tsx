@@ -65,8 +65,9 @@ const RobotReportModal = ({ robotName, onClose }: { robotName: string; onClose: 
   const [authenticated, setAuthenticated] = useState(false);
   const [passwordInput, setPasswordInput] = useState('');
   const [passwordError, setPasswordError] = useState(false);
+  const [selectedYear, setSelectedYear] = useState(AVAILABLE_YEARS[AVAILABLE_YEARS.length - 1]);
   const [selectedReport, setSelectedReport] = useState(0);
-  const [reports, setReports] = useState<ReportData[]>(() => loadRobotData(robotName));
+  const [reports, setReports] = useState<ReportData[]>(() => loadRobotData(robotName, AVAILABLE_YEARS[AVAILABLE_YEARS.length - 1]));
   const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
 
   const currentReport = reports[selectedReport];
