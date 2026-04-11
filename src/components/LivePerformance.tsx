@@ -16,8 +16,8 @@ const cards = [
     description: 'German index trading with optimized strategy.',
     image: daxImg,
     borderColor: '#4a7aff',
-    link: '',
-    enabled: false,
+    link: 'https://www.myfxbook.com/portfolio/viking-trading-bots/11996360',
+    enabled: true,
   },
   {
     name: 'Viking Alpha Gold',
