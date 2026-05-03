@@ -5,6 +5,7 @@ import StatsBar from '@/components/StatsBar';
 import ProductsSection from '@/components/ProductsSection';
 import { VikingManagementPreview } from '@/components/VikingManagementCards';
 import LivePerformance from '@/components/LivePerformance';
+import BeginnerSection from '@/components/BeginnerSection';
 import PricingSection from '@/components/PricingSection';
 import CtaSection from '@/components/CtaSection';
 import Footer from '@/components/Footer';
