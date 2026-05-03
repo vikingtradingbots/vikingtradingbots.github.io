@@ -19,14 +19,6 @@ const cards = [
     link: 'https://www.myfxbook.com/portfolio/viking-trading-bots/11996360',
     enabled: true,
   },
-  {
-    name: 'Viking Alpha Gold',
-    description: "Precision trading on the world's safe haven asset.",
-    image: btcImg,
-    borderColor: '#FFD700',
-    link: '',
-    enabled: false,
-  },
 ];
 
 const LivePerformance = () => {
