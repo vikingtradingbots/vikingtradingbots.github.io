@@ -4,7 +4,7 @@ import RobotReportModal from './RobotReportModal';
 import vikingAlphaBtcusd from '@/assets/viking-alpha-btcusd.png';
 import vikingAlphaDax from '@/assets/viking-alpha-dax.png';
 import forexComingSoon from '@/assets/forex-coming-soon.png';
-import nationalComingSoon from '@/assets/national-coming-soon.png';
+
 
 const tools = [
   {
